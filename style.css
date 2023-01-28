@@ -1,0 +1,90 @@
+body {
+    background-color: whitesmoke;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+
+.box-1 {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.box-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.box-3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.box {
+    padding: 40px;
+}
+
+.box h2 {
+    text-transform: uppercase;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.box p {
+    color: hsl(0, 0%, 100%, 0.75);
+    line-height: 1.6;
+
+}
+
+.box a{
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 12px 27px;
+    border-radius: 26px;
+    margin-top: 60px;
+    display: inline-block;
+    border: 2px solid whitesmoke;
+    transition: all 4s ease-in-out;
+}
+
+.box-1 a {
+    color:hsl(31, 77%, 52%);
+}
+
+.box-2 a {
+    color: hsl(184, 100%, 22%);
+}
+
+.box-3 a {
+    color: hsl(179, 100%, 13%);
+}
+
+.box a:hover {
+    color: hsl(0, 0%, 95%);
+    background: transparent;
+}
+
+@media screen and (max-width: 768px) {
+    wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    wrapper {
+        margin: 1rem;
+    }
+}
